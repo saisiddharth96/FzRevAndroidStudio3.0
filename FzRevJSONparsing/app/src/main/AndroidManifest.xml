@@ -11,14 +11,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AllPosts">
+        <activity android:name=".AllPosts"></activity>
+        <activity android:name=".CompletePost" />
+        <activity
+            android:name=".MainLandingPage"
+            android:label="@string/title_activity_main_landing_page"
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CompletePost"></activity>
     </application>
 
 </manifest>

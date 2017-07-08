@@ -8,14 +8,25 @@ public class PostsModelClass {
     private String title;
     private String content;
     private String source_url;
+    private String post_link;
+
+    public PostsModelClass(String title, String content, String source_url, String post_link) {
+        this.title = title;
+        this.content = content;
+        this.source_url = source_url;
+        this.post_link = post_link;
+    }
 
     public PostsModelClass() {
 
     }
-    public PostsModelClass(String title, String content, String source_url) {
-        this.title = title;
-        this.content = content;
-        this.source_url = source_url;
+
+    public String getPost_link() {
+        return post_link;
+    }
+
+    public void setPost_link(String post_link) {
+        this.post_link = post_link;
     }
 
     public String getTitle() {

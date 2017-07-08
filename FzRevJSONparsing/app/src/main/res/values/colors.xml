@@ -5,4 +5,5 @@
     <color name="colorAccent">#000000</color>
     <color name="actionBarText">#d50000</color>
     <color name="actionbarbground">#d020f3</color>
+    <color name="lightBackground">#000000</color>
 </resources>
