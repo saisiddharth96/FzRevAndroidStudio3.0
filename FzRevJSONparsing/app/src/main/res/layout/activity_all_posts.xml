@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.siddharth.fzrevjsonparsing.AllPosts"
+    android:fitsSystemWindows="true">
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/fzrevbanner"
+    android:foregroundGravity="center_horizontal"
+    android:id="@+id/fzRevLogo"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/AllPostsRecylerView"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="97sp"
+        tools:layout_editor_absoluteX="168sp"
+        tools:ignore="MissingConstraints"
+        android:fitsSystemWindows="true">
+
+    </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+<ProgressBar
+    android:layout_width="50sp"
+    android:layout_height="50sp"
+    android:id="@+id/progressBar"
+    tools:ignore="MissingConstraints"
+    android:layout_marginBottom="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="8sp"
+    app:layout_constraintVertical_bias="0.914"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginStart="8sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginEnd="8sp" />
+</android.support.constraint.ConstraintLayout>
